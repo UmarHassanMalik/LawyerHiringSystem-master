@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:gravity="start">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/case_history"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        card_view:cardCornerRadius="4dp"
+        card_view:contentPadding="8dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:src="@drawable/case_history"
+                android:layout_height="28dp"
+                android:layout_alignLeft="@+id/heading_casehistory"
+                android:layout_marginLeft="-36dp" />
+
+            <TextView
+                android:id="@+id/heading_casehistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="Your Case History"
+                />
+            <ListView
+                android:id="@+id/content_case_history"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/heading_casehistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/current_cases"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            card_view:cardCornerRadius="4dp"
+            card_view:contentPadding="8dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:src="@drawable/current_case"
+                    android:layout_height="28dp"
+                    android:layout_alignLeft="@+id/heading_current_case"
+                    android:layout_marginLeft="-36dp" />
+
+                <TextView
+                    android:id="@+id/heading_current_case"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="Your Current Cases"
+                    />
+                <TextView
+                    android:id="@+id/content_current_case"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/heading_current_case"
+                    android:layout_width="match_parent"
+
+                    android:text="Your On Going Cases Will be Visible Here"
+
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

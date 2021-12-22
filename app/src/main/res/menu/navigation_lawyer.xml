@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/lawyer_home"
+        android:icon="@drawable/navigation_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/lawyer_viewjob"
+        android:icon="@drawable/navigation_postjob"
+        android:title="Appply To Jobs" />
+
+<!--    <item-->
+<!--        android:icon="@drawable/navaigation_quotations"-->
+<!--        android:title="Given Quotations"-->
+<!--        android:visible="false"/>-->
+
+    <item
+        android:id="@+id/lawyer_profile"
+        android:icon="@drawable/nafigation_profile"
+        android:title="Profile" />
+
+</menu>

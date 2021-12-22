@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewArticle"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="284dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp">
+
+        <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/viewarticle_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="38dp"
+            android:layout_toRightOf="@+id/viewarticle_logo"
+            android:text="Available Articles"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <TextView
+            android:id="@+id/view_articles"
+            android:layout_width="match_parent"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="Articles will appear here" />
+    </ScrollView>
+
+    <Button
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button"
+        android:textColor="#ffffff"
+        android:drawableLeft="@drawable/write"
+        android:text="Write Article"
+        android:onClick="intentPostArticles"/>
+
+</LinearLayout>

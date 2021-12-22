@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    tools:context=".fragments.LawyerHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:gravity="start">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lawyer_case_history"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            card_view:cardCornerRadius="4dp"
+            card_view:contentPadding="8dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:src="@drawable/case_history"
+                    android:layout_height="28dp"
+                    android:layout_alignLeft="@+id/heading_lawyer_casehistory"
+                    android:layout_marginLeft="-36dp" />
+
+                <TextView
+                    android:id="@+id/heading_lawyer_casehistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="Your Case History"
+                    />
+                <TextView
+                    android:id="@+id/content_lawyer_case_history"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/heading_lawyer_casehistory"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="The previous cases you worked on will appear here."
+                    android:layout_marginStart="@dimen/content_left_margin"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lawyer_current_cases"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            card_view:cardCornerRadius="4dp"
+            card_view:contentPadding="8dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:src="@drawable/current_case"
+                    android:layout_height="28dp"
+                    android:layout_alignLeft="@+id/heading_lawyer_current_case"
+                    android:layout_marginLeft="-36dp" />
+
+                <TextView
+                    android:id="@+id/heading_lawyer_current_case"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="Your Current Cases"
+                    />
+
+                <TextView
+                    android:id="@+id/content_lawyer_current_case"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/heading_lawyer_current_case"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="The cases you are currently working on will appear here."
+                    android:layout_marginStart="@dimen/content_left_margin"
+                     />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

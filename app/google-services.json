@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "186346700837",
+    "firebase_url": "https://lawyer-hiring-system-default-rtdb.firebaseio.com",
+    "project_id": "lawyer-hiring-system",
+    "storage_bucket": "lawyer-hiring-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186346700837:android:27c4767ec22d1ca1827fcc",
+        "android_client_info": {
+          "package_name": "com.innova.lawyerhiringsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186346700837-j3cchut4drcp0j6m1p8j30r4sq65m75k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innova.lawyerhiringsystem",
+            "certificate_hash": "ee751a061676f11e21791d83988ce49aac59df3b"
+          }
+        },
+        {
+          "client_id": "186346700837-sokn7ae9vap32k16tb19945nrj8b1lgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGB2_JtBZizuYkv_CIdu1O7rBJNlfC3Gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186346700837-sokn7ae9vap32k16tb19945nrj8b1lgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/navigation_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/postjob"
+        android:icon="@drawable/navigation_postjob"
+        android:title="Post Job" />
+
+    <item
+        android:id="@+id/quotations"
+        android:icon="@drawable/navaigation_quotations"
+        android:title="My Quotations" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/nafigation_profile"
+        android:title="Profile" />
+
+</menu>
